@@ -22,7 +22,7 @@ export function Footer() {
         </div>
         <div>
           <h4 className="font-semibold mb-3">Контакты</h4>
-          <p className="text-sm text-muted-foreground flex items-center gap-2"><Mail className="h-4 w-4" /> hello@belarus.travel</p>
+          <p className="text-sm text-muted-foreground flex items-center gap-2"><Mail className="h-4 w-4" /><span>hello@belarus.travel</span></p>
           <p className="text-sm text-muted-foreground mt-1">Минск, пр. Независимости 1</p>
         </div>
         <div>
