@@ -28,7 +28,20 @@ export interface Place {
   price: string;
 }
 
-const img = (seed: string) => `https://picsum.photos/seed/${seed}/1200/800`;
+import brestImg from "@/assets/places/brest-fortress.jpg";
+import pushchaImg from "@/assets/places/belovezhskaya.jpg";
+import mirImg from "@/assets/places/mir-castle.jpg";
+import nesvizhImg from "@/assets/places/nesvizh.jpg";
+import sofiaImg from "@/assets/places/sofia.jpg";
+import braslavImg from "@/assets/places/braslav.jpg";
+import libraryImg from "@/assets/places/library.jpg";
+import khatynImg from "@/assets/places/khatyn.jpg";
+import soligorskImg from "@/assets/places/soligorsk.jpg";
+import lidaImg from "@/assets/places/lida.jpg";
+import strochitsyImg from "@/assets/places/strochitsy.jpg";
+import blueImg from "@/assets/places/blue-lakes.jpg";
+
+const gal = (main: string) => [main, main, main];
 
 export const PLACES: Place[] = [
   {

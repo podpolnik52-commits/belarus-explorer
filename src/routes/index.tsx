@@ -6,6 +6,7 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { PLACES } from "@/data/places";
 import { PlaceCard } from "@/components/PlaceCard";
+import heroImg from "@/assets/hero.jpg";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -34,10 +35,9 @@ function Index() {
       <section className="relative min-h-[92vh] flex items-center overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="https://images.unsplash.com/photo-1567525432087-1d2f1fbe53fe?w=1920&q=80"
-            alt=""
+            src={heroImg}
+            alt="Пейзаж Беларуси"
             className="w-full h-full object-cover animate-float-slow"
-            onError={(e) => { (e.currentTarget as HTMLImageElement).src = "https://picsum.photos/seed/belarus-hero/1920/1200"; }}
           />
           <div className="absolute inset-0 hero-gradient" />
         </div>
