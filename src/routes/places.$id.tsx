@@ -36,7 +36,7 @@ export const Route = createFileRoute("/places/$id")({
 });
 
 function PlaceDetail() {
-  const place = Route.useLoaderData();
+  const place = Route.useLoaderData() as (typeof PLACES)[number];
   const { has, toggle } = useFavorites();
   const fav = has(place.id);
   const [slide, setSlide] = useState(0);
